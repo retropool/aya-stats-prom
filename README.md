@@ -77,3 +77,8 @@ Right click and save [Aya Testnet Grafana dashboard](https://raw.githubuserconte
 Import it into Grafana
 
 ![import](https://raw.githubusercontent.com/retropool/aya-stats-prom/main/imgs/import.jpg)
+
+
+(Remember to add your Prometheus data source)
+
+![data-source](https://raw.githubusercontent.com/retropool/aya-stats-prom/main/imgs/datasource.jpg)
