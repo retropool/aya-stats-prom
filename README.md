@@ -41,7 +41,7 @@ Copy the new target and save file: (Change IP if required)
 
 ## 4) Download textfile-collector script
 
-Download textfile-collector script
+Download textfile-collector script. This adds additional stats like Jail status, Voting power etc.
 
     cd $home
     wget https://raw.githubusercontent.com/retropool/aya-stats-prom/main/ayastats.sh
