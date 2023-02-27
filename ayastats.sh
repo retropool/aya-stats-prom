@@ -5,9 +5,9 @@ jailed=$(sudo ayad query staking validator ayavaloper1f6ytfl7svdke5vpfgze2p4cjwl
 votingpower=$(sudo ayad status | jq -r .ValidatorInfo.VotingPower)
 catchingup=$(sudo ayad status | jq -r .SyncInfo.catching_up)
 uptime=$(ps -eo comm,etimes | grep cosmovisor)
-totaljailed=$(sudo ayad query staking validators -o json | jq '.validators | map(select(.jailed == true)) | length')
-totalen=$(sudo ayad query slashing signing-infos -o json | jq '.info[].address' | wc -l)
-tombstoned=$(sudo ayad query slashing signing-infos -o json | jq '.info | map(select(.tombstoned == true)) | length')
+totaljailed=$(sudo ayad query staking validators -o json --limit 300 | jq '.validators | map(select(.jailed == true)) | length')
+totalen=$(sudo ayad query slashing signing-infos -o json --limit 300 | jq '.info[].address' | wc -l)
+tombstoned=$(sudo ayad query slashing signing-infos -o json --limit 300 | jq '.info | map(select(.tombstoned == true)) | length')
 
 catchingup=${catchingup//false/1}
 catchingup=${catchingup//true/2}
