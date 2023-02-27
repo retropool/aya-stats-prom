@@ -45,7 +45,10 @@ Download textfile-collector script. This adds additional stats like Jail status,
 
     cd $home
     wget https://raw.githubusercontent.com/retropool/aya-stats-prom/main/ayastats.sh
+    
+Make it executable
 
+    sudo chmod +x ayastats.sh
 
 ## 5) Add your **ayavaloper** address to the script
 
