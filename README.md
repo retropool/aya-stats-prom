@@ -16,7 +16,7 @@ A Grafana dashboard that uses tendermint metrics and a textfile-collector script
 
     sed -i 's/prometheus = false/prometheus = true/g' /opt/aya/config/config.toml
 
-After restarting your node, you should be able to access the tendermint metrics (default port is 26660):
+After restarting your node (sudo systemctl restart cosmovisor.service), you should be able to access the tendermint metrics (default port is 26660):
 <http://ip-address-of-node:26660>
 
 If the port isn't open you may need to allow if through UFW.
