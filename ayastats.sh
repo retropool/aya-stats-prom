@@ -11,8 +11,8 @@ tombstoned=$(sudo ayad query slashing signing-infos -o json --limit 300 | jq '.i
 
 catchingup=${catchingup//false/1}
 catchingup=${catchingup//true/2}
-jailed=${catchingup//false/1}
-jailed=${catchingup//true/2}
+jailed=${jailed//false/1}
+jailed=${jailed//true/2}
 uptime=$(echo $uptime | awk '{ print $2 }')
 
 if [ ! -f /var/lib/prometheus/node-exporter/ayad1.prom ]; then
