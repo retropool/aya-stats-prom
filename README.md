@@ -76,11 +76,11 @@ If you go to the Prometheus metrics page in your browser you should now see ayad
 ```
 ## 8) Import Grafana dashboard
 
-First add a Prometheus Data Source
+First add a Prometheus Data Source in Grafana
 
      http://ip-address-of-node:9090
 
-Right click and save [Aya Testnet Grafana dashboard](https://raw.githubusercontent.com/retropool/aya-stats-prom/main/Aya%20Testnet-1677275598492.json)
+Then right click and save [Aya Testnet Grafana dashboard](https://raw.githubusercontent.com/retropool/aya-stats-prom/main/Aya%20Testnet-1677275598492.json)
 
 Import it into Grafana
 
